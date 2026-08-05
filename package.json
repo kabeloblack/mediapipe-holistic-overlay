@@ -1,0 +1,32 @@
+{
+  "name": "mediapipe-holistic-overlay",
+  "version": "0.1.0",
+  "description": "Framework-agnostic wrapper for MediaPipe Holistic: loads the model, runs pose/hand/face prediction on video, and draws the raw skeleton/hand/face-mesh debug overlay to canvas.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mediapipe",
+    "holistic",
+    "pose-estimation",
+    "sign-language",
+    "canvas"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@mediapipe/drawing_utils": "^0.3.1675466124",
+    "@mediapipe/holistic": "^0.5.1675471629"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  }
+}
